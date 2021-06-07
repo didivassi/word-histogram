@@ -15,7 +15,7 @@ public class WordHistogram implements Iterable<String>{
      * PARAMS String to analyse
      * */
     public void analyseString(String string) {
-        String[] bags=string.toLowerCase().replace(".","").replace(",","").split(" ");
+        String[] bags=string.toLowerCase().replaceAll("[.,]","").split(" ");
         for (String word:bags) {
             Integer occurrences=wordHistogram.get(word)==null?1:wordHistogram.get(word)+1;
             wordHistogram.put(word,occurrences);
