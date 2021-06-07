@@ -12,7 +12,7 @@ public class WordHistogram implements Iterable<String>{
     private Map<String,Integer> wordHistogram = new  HashMap<>();
 
     /**
-     * @PARAMS String to analyse
+     * PARAMS String to analyse
      * */
     public void analyseString(String string) {
         String[] bags=string.toLowerCase().replace(".","").replace(",","").split(" ");
@@ -24,8 +24,8 @@ public class WordHistogram implements Iterable<String>{
     }
 
     /**
-     * @PARAMS word
-     * @RETURNS Integer with number of occurrences in a string
+     * Receives a word
+     * RETURNS Integer with number of occurrences in a string
      * */
     public Integer get(String word){
         return wordHistogram.get(word);
