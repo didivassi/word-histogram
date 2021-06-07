@@ -13,5 +13,10 @@ public class Main {
         for (String word:wordHistogram) {
             System.out.println(word + " : " + wordHistogram.get(word));
         }
+
+        WordHistogram wordHistogram2 = new WordHistogram();
+        for (String word:wordHistogram2) {
+            System.out.println(word + " : " + wordHistogram.get(word));
+        }
     }
 }
