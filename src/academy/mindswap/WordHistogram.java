@@ -20,11 +20,10 @@ public class WordHistogram implements Iterable<String>{
             Integer occurrences=wordHistogram.get(word)==null?1:wordHistogram.get(word)+1;
             wordHistogram.put(word,occurrences);
         }
-
     }
 
     /**
-     * Receives a word
+     * PARAMS String word
      * RETURNS Integer with number of occurrences in a string
      * */
     public Integer get(String word){
